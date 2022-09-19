@@ -26,10 +26,10 @@ def _parens(code):
             return i
 
 
-def myargs_repr(call_line=None):
+def myargs_repr():
     func_name = inspect.stack()[1][3]
     parent_frame = inspect.stack()[2][0]
-    lineo = call_line or parent_frame.f_lineno-1
+    lineo = parent_frame.f_lineno-1
     upper_frame = parent_frame
     while upper_frame.f_back:
         upper_frame = upper_frame.f_back
