@@ -1,7 +1,7 @@
 # arg_repr.py
 Get an exact representation of your function call arguments.
 ```python
-from args_repr import myargs_repr()
+from args_repr import myargs_repr
 
 def function(*args):
     print(myargs_repr())
