@@ -26,3 +26,5 @@ $ python test.py
 This works by traversing the source code from the beginning of the function call (achievable by taking `f_lineno` from the caller frame) up until the closing paren.\
 Although there are a lot of tests on test.py,
 it's not perfect, so you're welcome to try and break the code - fix it - add tests - PR - ?? - profit.
+
+### Note - multi lines repr is problematic for versions <=3.7 (old parser issue).
