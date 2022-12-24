@@ -1,8 +1,8 @@
-from arg_repr import myargs_repr
+from arg_repr import arg_repr
 import functools
 
 def f(*args):
-    return myargs_repr()
+    return arg_repr()
 
 eprint = functools.partial(print, end='\n---------------------\n')
 eprint()
