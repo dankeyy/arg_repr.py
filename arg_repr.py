@@ -84,7 +84,8 @@ def arg_repr():
         # up until the last relevant closing paren
         code = code[p:]
 
-    code = code[code.index(func_name) + len(func_name) + 1:]
+    code = code[code.index(func_name) + len(func_name):]
+    code = code[code.index('(') + 1:]
     code = code[:_parens(code)] # _parens might return None but that's ok, [:None] is valid
 
     # code is now a repr of the function call arguments
